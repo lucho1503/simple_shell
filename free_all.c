@@ -1,5 +1,10 @@
 #include "holberton.h"
 
+/**
+ * free_all - free memory
+ * @double_ptr: duuble
+ */
+
 void free_all(char **double_ptr)
 {
 	unsigned int i;
@@ -16,4 +21,3 @@ void free_all(char **double_ptr)
 		free(double_ptr[i]);
 	free(double_ptr);
 }
-
