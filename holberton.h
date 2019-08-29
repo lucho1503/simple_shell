@@ -1,3 +1,6 @@
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -18,12 +21,12 @@ unsigned int count_dir(char *path);
 char **store_environ(char *com, char **env);
 char *_getenv(const char *name, char **environ);
 void _eof(char *buf);
-char *_strncpycmd(char *dest, char *src, char* com, int n, int c);
+char *_strncpycmd(char *dest, char *src, char *com, int n, int c);
 char *_strncpyconst(char *dest, const char *src, int n);
-void com_null(char* buf);
+void com_null(char *buf);
 void exit_out(char *buf, char **com);
-void env_out(char *buf, char** com, char **env);
-void error_fork();
+void env_out(char *buf, char **com, char **env);
+void error_fork(void);
 void error_msg(char **argv, char *com, int i);
 int _puterror(char c);
 void parent_free(char *buf, char **com);
@@ -31,4 +34,4 @@ void _path(char **com, char *buf, char **env, char **argv, int conteo);
 void print_env(char **env);
 void free_all(char **double_ptr);
 unsigned int _strlen_const(const char *name);
-
+endif /* HOLBERTON_H */
