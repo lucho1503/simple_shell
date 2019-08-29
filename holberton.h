@@ -34,4 +34,4 @@ void _path(char **com, char *buf, char **env, char **argv, int conteo);
 void print_env(char **env);
 void free_all(char **double_ptr);
 unsigned int _strlen_const(const char *name);
-endif /* HOLBERTON_H */
+#endif /* HOLBERTON_H */
